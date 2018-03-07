@@ -1,0 +1,27 @@
+{
+  "name": "agneta-test",
+  "version": "0.0.1",
+  "description": "Automated testing for Agneta Platform",
+  "main": "main",
+  "scripts": {
+    "lint": "node node_modules/eslint/bin/eslint --ignore-path .gitignore ./ --ext .js"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agneta/test.git"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "Agneta Network Applications, LLC",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "chai": "4.1.2",
+    "chai-http": "3.0.0",
+    "klaw": "^2.1.1"
+  }
+}
